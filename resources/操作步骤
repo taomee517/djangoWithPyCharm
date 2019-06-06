@@ -1,0 +1,12 @@
+1.  file-new project,选择django,设置项目路径djangoWithPyCharm
+    项目各个文件的功能：
+    a)  manage.py 是django的管理主程序
+    b)  templates 目录是html文件存放的地方
+    c)  wsgi.py 是网络通信接口
+    d） urls.py 是路由文件
+    e)  settings.py 是主配置文件
+
+2.  创建app,在pycharm下方的terminal终端中输入命令：
+　　python manage.py startapp mysite
+
+3.  编写路由,
