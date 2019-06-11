@@ -9,4 +9,14 @@
 2.  创建app,在pycharm下方的terminal终端中输入命令：
 　　python manage.py startapp mysite
 
-3.  编写路由,
+3.  编写路由,路由都写在项目的urls文件中，可以直接映射，也可以用include函数，然后在具体的app中去映射
+
+4.  编写业务处理逻辑：业务处理逻辑都在views.py文件里
+
+5.  返回HTML文件：
+    1) 先在项目的settings文件中加入template路径： 'DIRS': [os.path.join(BASE_DIR, 'templates')]
+    2) 再在view.py业务方法中返回具体的html文件： return render(request, 'index.html')
+
+6.  运行web服务
+    a) 命令行的方式是：python manage.py runserver 127.0.0.1:8000
+    b) 点击PyCharm右上方的项目选择框，选择对应的项目，然后点运行或debug按钮
